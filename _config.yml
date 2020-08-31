@@ -3,7 +3,7 @@ email:              master@meilcoding.com
 description:        매일 매일 마크업 코딩하는 UI 개발자입니다.
 author:             meilcoding
 baseurl:            ""
-url:                "meilcoding.github.io"
+url:                "https://meilcoding.github.io"
 
 # Social Profiles
 twitter_username:   
@@ -13,7 +13,7 @@ instagram_username:
 linkedin_username:
 
 # Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+google_analytics:   UA-176873649-1 # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
