@@ -9,7 +9,7 @@ article {
       display:block;
       width:5px;
       height:100%;
-      background-color:$teal;
+      background-color:$primary;
       transition:0.5s;
       opacity:0;
       content:'';
@@ -65,7 +65,7 @@ article {
       line-height:1.5;
       border-radius:6px;
       color:$white;
-      background:$teal;
+      background:$primary;
       opacity:0.5;
       transition:0.5s;
       box-sizing:border-box;
