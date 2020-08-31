@@ -1,0 +1,25 @@
+title:              매일코딩
+email:              master@meilcoding.com
+description:        매일 매일 마크업 코딩하는 UI 개발자입니다.
+author:             meilcoding
+baseurl:            ""
+url:                "meilcoding.github.io"
+
+# Social Profiles
+twitter_username:   
+github_username:    meilcoding
+facebook_username:  
+instagram_username:  
+linkedin_username:
+
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  #- jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
