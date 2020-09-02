@@ -17,84 +17,80 @@ layout: default
             {% if page.subtitle %}
             <h2 class="subheading">{{ page.subtitle }}</h2>
             {% endif %}
-            <span class="meta">{{ page.date | date: '%B %d, %Y' }}
-            </span>
+            <h3 class="meta">{{ page.date | date: '%B %d, %Y' }}</h3>
+            <br/>
             {% if page.tags %}
-            {% for tag in page.tags %}
-            {% if site.data.tags contains tag %}
-            <span class="tag">{{ site.data.format[tag] }}</span>
-            {% endif %}
-            {% endfor %}
+              {% for tag in page.tags %}
+                {% if site.data.tags contains tag %}
+                <a href="/posts/?tag={{ tag }}"><span class="tag">{{ site.data.format[tag] }}</span></a>
+                {% endif %}
+              {% endfor %}
             {% endif %}
           </div>
         </div>
       </div>
     </div>
   </header>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-8117460626637171"
-        data-ad-slot="1048260775"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-        <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-       </script>
-        {{ content }}
-
-        <hr>
-
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <ins class="adsbygoogle"
           style="display:block"
           data-ad-client="ca-pub-8117460626637171"
           data-ad-slot="1048260775"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
-        <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-
-        <div class="clearfix">
-
-          {% if page.previous.url %}
-          <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
-              Post</span></a>
+          <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+         </script>
+          {{ content }}
+  
+          <hr>
+          <div class="clearfix">
+  
+            {% if page.previous.url %}
+            <a class="btn btn-primary float-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+                Post</span></a>
+            {% endif %}
+            {% if page.next.url %}
+            <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+                Post</span> &rarr;</a>
+            {% endif %}
+  
+          </div>
+          <br/>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8117460626637171"
+            data-ad-slot="1048260775" data-ad-format="auto" data-full-width-responsive="true"></ins>
+          <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+          <br>
+          {% if page.comments %}
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+            /*
+            var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function () { // DON'T EDIT BELOW THIS LINE
+              var d = document,
+                s = d.createElement('script');
+              s.src = 'https://buppagi.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           {% endif %}
-          {% if page.next.url %}
-          <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
-              Post</span> &rarr;</a>
-          {% endif %}
-
         </div>
-        {% if page.comments %}
-        <br>
-        <div id="disqus_thread"></div>
-        <script>
-          /**
-          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-          /*
-          var disqus_config = function () {
-            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-          };
-          */
-          (function () { // DON'T EDIT BELOW THIS LINE
-            var d = document,
-              s = d.createElement('script');
-            s.src = 'https://buppagi.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-        {% endif %}
       </div>
     </div>
-  </div>
+  </main>

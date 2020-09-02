@@ -73,6 +73,22 @@ header.masthead {
         color: $white;
       }
     }
+    .tag {
+      display:inline-block;
+      padding:0 10px;
+      font-weight:600;
+      font-size:14px;
+      line-height:24px;
+      font-style: italic;
+      color:#0366d6;
+      background-color:#f1f8ff;
+      border:1px solid transparent;
+      border-radius:2em;
+      &:hover {
+        text-decoration:none;
+        background-color:#def;
+      }
+    }
     @media only screen and (min-width: 768px) {
       h1 {
         font-size: 55px;
