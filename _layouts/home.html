@@ -3,6 +3,10 @@ layout: default
 description: 포스트 전체 목록입니다.
 ---
 
+<script>
+  document.getElementById("theme-button").innerHTML = window.theme === "dark" ? "White Mode" : "Dark Mode";
+</script>
+
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
@@ -53,7 +57,13 @@ description: 포스트 전체 목록입니다.
             {% endif %}
           </a>
           <div class="post-info">
-            <div class="post tag"></div>
+            <div class="post-tags">
+              {% if post.tags %}
+              {% for tag in post.tags %}
+              <span class="tag" data-tag="{{tag}}" role="button">{{ site.data.format[tag] }}</span>
+              {% endfor %}
+              {% endif %}
+            </div>
             <div class="post-meta">Posted on {{ post.date | date: '%B %d, %Y' }}</div>
           </div>
         </article>

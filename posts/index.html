@@ -5,20 +5,14 @@ description: 포스트 전체 목록입니다.
 background: '/img/bg-main.jpg'
 ---
 
-{% for tag in site.data.tags %}
-<span class="tag" data-tag="{{tag}}">
-  {{ site.data.format[tag] }}
-</span>
-{% endfor %}
+<div class="post-tags__all">
+  {% for tag in site.data.tags %}
+    <span class="tag" data-tag="{{tag}}" role="button">{{ site.data.format[tag] }}</span>
+  {% endfor %}
+</div>
 <hr/>
-<br/>
 {% for post in paginator.posts %}
-  <div class="post-wrapper" 
-    {% if post.tags %}
-      {% for tag in post.tags %}
-        data-{{ tag }}
-      {% endfor %}
-    {% endif %}>
+  <div class="post-wrapper" {% if post.tags %} {% for tag in post.tags %} data-{{ tag }} {% endfor %} {% endif %}>
     <article class="post-preview">
       <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
         <h2 class="post-title">{{ post.title }}</h2>
@@ -32,7 +26,7 @@ background: '/img/bg-main.jpg'
         <div class="post-tags">
           {% if post.tags %}
             {% for tag in post.tags %}
-              <span class="tag" data-{{ tag }}>{{ site.data.format[tag] }}</span>
+              <span class="tag" data-tag="{{tag}}" role="button">{{ site.data.format[tag] }}</span>
             {% endfor %}
           {% endif %}
         </div>

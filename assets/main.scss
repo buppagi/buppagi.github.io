@@ -22,3 +22,64 @@ main {
     width:100%;
   }
 }
+
+html {
+  &.dark {
+    body {
+      background-color: $gray-900;
+	    color: $light;
+    }
+    #mainNav {
+      background-color: $gray-900;
+      border-bottom: 1px solid $gray-900;
+      &.is-fixed {
+        background-color: $gray-900;
+        border-bottom:1px solid $gray-900;
+        .navbar-brand {
+          color: $light;
+        }
+        .navbar-nav,
+        .navbar-toggler {
+          color: $light;
+          > li.nav-item {
+            > a {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+    main {
+      blockquote {
+        background-color: #1d1f21;
+        color: #f8f9fa;
+        border-left: 10px solid #343a40;
+        a {
+          color: #e9ecef;
+        }
+      }
+      code.highlighter-rouge {
+        background-color: #1d1f21;
+        color: #fd7e14;
+      }
+      img + em,
+      img + div + em {
+        color: #e9ecef;
+      }
+    }
+    a {
+      color:$light;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    &.dark {
+      #mainNav {
+        background-color: transparent;
+        border-bottom: 1px solid transparent;
+      }
+    }
+  }
+}

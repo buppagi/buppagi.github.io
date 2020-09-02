@@ -1,6 +1,8 @@
 // Global styling for this template
+html {
+  font-size:20px;
+}
 body {
-  font-size: 20px;
   color: $gray-900;
   @include nanum-squareround-font;
 }
@@ -56,9 +58,12 @@ blockquote {
   font-weight: 700;
   margin-top: 60px;
 }
-
-.caption {
-  font-size: 14px;
+.caption,
+html.dark main img+em,
+html.dark main img+div+em,
+main img+em,
+main img+div+em  {
+  font-size: 0.8rem;
   font-style: italic;
   display: block;
   margin: 0;

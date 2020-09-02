@@ -2,7 +2,7 @@
 #mainNav {
   position: absolute;
   border-bottom: 1px solid $gray-200;
-  background-color: white;
+  background-color: $white;
   @include sans-serif-font;
   .navbar-brand {
     font-weight: 800;
@@ -63,7 +63,7 @@
     &.is-fixed {
       /* when the user scrolls down, we hide the header right above the viewport */
       position: fixed;
-      top: -67px;
+      top: -78px;
       -webkit-transition: -webkit-transform 0.2s;
       -moz-transition: -moz-transform 0.2s;
       transition: transform 0.2s;
