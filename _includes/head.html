@@ -6,8 +6,8 @@
   <meta name="google-site-verification" content="56U4iaZj88XvIq6R70OpcKkZfYAlUUkqPcksIRVEtuM" />
   <meta name="naver-site-verification" content="9ebbb0b55674aeab90f642b554635c6e7d4c51f6" />
   <title>
-    {% if page.title %}{{ page.title | escape }} - {{ site.title | escape }}
-    {% else %}{{ site.title | escape }}{% endif %}
+    {% if page.title %}{{ page.title | escape }} - 부빠기의 UI개발 블로그
+    {% else %}부빠기의 UI개발 블로그{% endif %}
   </title>
 
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
@@ -23,7 +23,7 @@
   
   <link rel="stylesheet" href="{{"/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="alternate" type="application/rss+xml" title="부빠기의 UI개발 블로그" href="{{ "/feed.xml" | relative_url }}">
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
