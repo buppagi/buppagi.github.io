@@ -136,3 +136,58 @@ article {
     }
   }
 }
+
+
+.content-cards {
+  margin:0 auto 20px;
+  padding: 3px;
+  max-width: percentage(600/760);
+  background-color:$white;
+  border: 1px solid;
+  border-color: #e9eaed #dadada #ccc;
+  img {
+    max-width:100%;
+    width:auto;
+  }
+  @include e('link') {
+    display:block;
+    text-decoration:none;
+    &:focus,
+    &:hover {
+      text-decoration:inherit;
+    }
+  }
+  @include e('image') {
+    img {
+      margin:0 auto;
+    }
+  }
+  @include e('title') {
+    margin:10px 15px 7px 15px;
+    font-weight:bold;
+    font-size:rem-calc(22);
+    line-height:1.5;
+    color:$dark;
+  }
+  @include e('description') {
+    margin:7px 15px 10px 15px;
+    font-size:rem-calc(16);
+    line-height:1.5;
+    color:$dark;
+  }
+  @include e('site-name') {
+    margin: 10px 15px;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #9197a3;
+    text-align: right;
+    text-transform: uppercase;
+    @include m('favicon') {
+      display:inline;
+      width:auto;
+      max-width:100%;
+      max-height:24px;
+    }
+  }
+}

@@ -95,7 +95,7 @@
 }
 
 
-// element 별명
+// element 줄임말
 @mixin e($element) {
   @include element($element) {
     @content;

@@ -70,6 +70,11 @@ html {
     a {
       color:$light;
     }
+    .content-cards {
+      @include e('description') {
+        color:$light;
+      }
+    }
   }
 }
 
