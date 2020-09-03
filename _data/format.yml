@@ -8,9 +8,13 @@ gulp.js: Gulp.js
 npm: NPM
 framework: framework
 github: GitHub
-devtool: DevTool
+devtool: 개발도구
 css: CSS
 html: HTML
 jquery: jQuery
 plugin: Plugin
 tailwindcss: TailWindCSS
+programs: Programs
+it정보: IT정보
+넷플릭스: 넷플릭스
+확장프로그램: 확장프로그램
