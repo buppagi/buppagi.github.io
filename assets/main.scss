@@ -26,15 +26,15 @@ main {
 html {
   &.dark {
     body {
-      background-color: $gray-900;
+      background-color: $dark;
 	    color: $light;
     }
     #mainNav {
-      background-color: $gray-900;
-      border-bottom: 1px solid $gray-900;
+      background-color: $dark;
+      border-bottom: 1px solid $dark;
       &.is-fixed {
-        background-color: $gray-900;
-        border-bottom:1px solid $gray-900;
+        background-color: $dark;
+        border-bottom:1px solid $dark;
         .navbar-brand {
           color: $light;
         }
