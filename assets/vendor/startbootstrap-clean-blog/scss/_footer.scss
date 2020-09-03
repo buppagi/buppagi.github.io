@@ -11,3 +11,9 @@ footer {
     text-align: center;
   }
 }
+
+html.dark {
+  .fas {
+    color:$dark;
+  }
+}
