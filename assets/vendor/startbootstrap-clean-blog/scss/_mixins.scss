@@ -75,3 +75,35 @@
 @mixin nanum-squareround-font() {
   font-family: 'NanumSquareRound', Helvetica, Arial, sans-serif;
 }
+
+/// Block Element
+/// @access public
+/// @param {String} $element - Element's name
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+/// Block Modifier
+/// @access public
+/// @param {String} $modifier - Modifier's name
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+
+// element 별명
+@mixin e($element) {
+  @include element($element) {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  @include modifier($modifier) {
+    @content;
+  }
+}
