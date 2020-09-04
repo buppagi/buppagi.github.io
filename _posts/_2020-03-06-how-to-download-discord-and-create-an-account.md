@@ -5,7 +5,7 @@ subtitle: ""
 date: 2020-03-06 16:45:35 +0900
 background: ''
 categories: IT정보
-tags: [디스코드, IT정보, 프로그램]
+tags: [discord, it-infor, programs]
 comments: true
 ---
 

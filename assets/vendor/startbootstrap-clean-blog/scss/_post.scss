@@ -1,4 +1,16 @@
 // Styling for the post page
+figure {
+  &.image {
+    figcaption {
+      padding:10px;
+      font-size: rem-calc(14);
+      font-style: italic;
+      text-align: center;
+      color:#999;
+    }
+  }
+}
+
 article {
   &.post-preview {
     transform:translateX(0px);
