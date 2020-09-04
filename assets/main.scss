@@ -67,9 +67,19 @@ html {
         color: #e9ecef;
       }
     }
-    .content-cards {
-      @include e('description') {
+    .post-preview {
+      > a {
         color:$light;
+      }
+    }
+    .content-cards {
+      background-color:$dark;
+      border-color:$gray-500 $gray-600 $gray-700;
+      @include e('title') {
+        color:$white;
+      }
+      @include e('description') {
+        color:$gray-500;
       }
     }
   }
