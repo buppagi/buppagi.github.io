@@ -67,9 +67,6 @@ html {
         color: #e9ecef;
       }
     }
-    a {
-      color:$light;
-    }
     .content-cards {
       @include e('description') {
         color:$light;
