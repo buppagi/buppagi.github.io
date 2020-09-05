@@ -143,7 +143,10 @@ article {
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
-        font-size: 36px;
+        font-size: rem-calc(36);
+      }
+      > .post-subtitle {
+        font-size: rem-calc(29);
       }
     }
   }
