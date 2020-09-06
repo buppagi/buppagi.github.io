@@ -24,9 +24,11 @@ comments: true
 
 ## 스팀설정
 ![디스코드01](/img/posts/2019-10-28/discord01.png)
+
 스팀메신저에서 `Steam -> 설정`에 들어갑니다.
 
 ![디스코드02](/img/posts/2019-10-28/discord02.png)
+
 게임 중 탭에 보면 게임 내 Steam 오버레이 사용이 있습니다. 여기에 체크를 하시면됩니다.
 
 {% include image.html url="/img/posts/2019-10-28/discord03.png" description="디스코드 설정방법" %}
