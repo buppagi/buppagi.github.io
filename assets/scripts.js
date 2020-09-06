@@ -25,4 +25,29 @@ $(function () {
     },
     closeOnContentClick: true
   });
+
+  $('.search-toggle').on('click', function(){
+    if (!$(this).hasClass('active')) {
+      $(this).addClass("active");
+      $('body').css('overflow', 'hidden');
+      $('header.masthead').addClass('on');
+      $(".header-search-block").fadeIn();
+      $(".header-search-block .tipue_search_input").focus().select();
+    }
+    return false;
+  });
+
+  $('.header-search-block').on('click', '.search-close', function(){
+    $(".header-search-block .tipue_search_input").blur();
+    $('body').removeAttr('style');
+    $('header.masthead').removeClass('on');
+    $(".header-search-block").fadeOut();
+    $('.search-toggle').removeClass('active');
+  });
+
+   $('#tipue_search_input').tipuesearch({
+    'wholeWords': false, //한글 검색을 가능하게 하는 옵션
+    'showTime': false, //검색이 완료되기 까지 소요된 시간을 표시하는 옵션
+    'minimumLength': 1 //최소 검색 글자수에 대한 설정으로 필자는 한단어 이상이면 검색가능하게 설정
+  });
 });
