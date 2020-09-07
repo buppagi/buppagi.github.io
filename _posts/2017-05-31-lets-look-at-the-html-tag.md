@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "HTML &lt;head&gt;태그에 알아보자."
+title: "👨‍💻 HTML &lt;head&gt;태그에 알아보자."
 subtitle: "&lt;head&gt;태그에 종류 및 기능들을 자세히 살펴보자."
 date: 2017-05-31 22:41:35 +0900
 background: ''
