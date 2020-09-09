@@ -4,7 +4,7 @@ title: "🐪 TailwindCSS 시작하기!"
 subtitle: "Tainwindcss 초보라를 위해서 하나씩 올려보겠습니다. (저도 처음하는 사용자입니다.)"
 date: 2020-08-31 14:22:40 +0900
 background: '/img/posts/2020-08-31/bg.jpg'
-categories: [uidev, tailwindcss]
+categories: [UI 개발]
 tags: [tailwindcss, css, framework, frontend, gulpjs]
 comments: true
 ---

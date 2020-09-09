@@ -4,7 +4,7 @@ title: "👨‍💻 jekyll serve 의존성 오류"
 subtitle: "jekyll serve 실행시 sitemap 의존성 오류 해결방법"
 date: 2020-09-02 13:22:02 +0900
 background: '/img/bg-frontend-dev-unsplash.jpg'
-categories: [jekyll]
+categories: [Web Tech]
 tags: [jekyll, plugin]
 comments: true
 ---

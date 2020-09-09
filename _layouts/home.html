@@ -3,10 +3,6 @@ layout: default
 description: 포스트 전체 목록입니다.
 ---
 
-<script>
-  document.getElementById("theme-button").innerHTML = window.theme === "dark" ? "White Mode" : "Dark Mode";
-</script>
-
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
@@ -17,8 +13,8 @@ description: 포스트 전체 목록입니다.
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
-          <div class="page-heading">
-            <img src="/img/buppagi_logo.png" width="126" height="126" alt="buppagi"/>
+          <div class="page-heading home">
+            <img class="logo" src="/img/buppagi_logo.png" alt="buppagi"/>
             <h1>UI Developer</h1>
             {% if site.description %}
             <span class="subheading">{{ site.description }}</span>

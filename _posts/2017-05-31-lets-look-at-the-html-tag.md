@@ -4,7 +4,7 @@ title: "👨‍💻 HTML &lt;head&gt;태그에 알아보자."
 subtitle: "&lt;head&gt;태그에 종류 및 기능들을 자세히 살펴보자."
 date: 2017-05-31 22:41:35 +0900
 background: ''
-categories: [web tech, html]
+categories: [UI 개발]
 tags: [html, uidev, tags, meta]
 comments: true
 ---
@@ -44,7 +44,7 @@ comments: true
 
 
 # 개요
-HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<sup>(자주 사용하는 요소만)</sup>만 하거나 아니면 전에 작성한 것을 <kbd>CTRL+C</kbd>, <kbd>CTRL+V</kbd>하기만 했었습니다. 그치만 근래 [Open Graph](http://ogp.me/)도 많이 사용 되면서 궁금증이 생겨났고, 좀 더 깊이 그리고 자세히 알고 싶어졌습니다.
+HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<sup>(자주 사용하는 요소만)</sup>만 하거나 아니면 전에 작성한 것을 <kbd>CTRL+C</kbd>, <kbd>CTRL+V</kbd>하기만 했었습니다. 그치만 근래 [Open Graph](http://ogp.me/){: target="_blank" rel="noopener noreferrer"}도 많이 사용 되면서 궁금증이 생겨났고, 좀 더 깊이 그리고 자세히 알고 싶어졌습니다.
 혹시 나와 같은 사람들이 분명히 있을 듯하여 구글링 검색을 통해 알게 된 자료를 가지고 정리를 해보려고 합니다.
 
 우선, 정리 하기전에`<meta>` 태그 보단 `<head>` 태그 영역에 들어가는 것을 좀 더 심도 있게 다뤄보려고 합니다.
@@ -171,10 +171,10 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <meta name="geo.position" content="latitude;longitude">
 <meta name="ICBM" content="latitude, longitude">
 ```
-* [구글이 이해하는 메타 태그](https://support.google.com/webmasters/answer/79812?hl=en)
-* [WHATWG Wiki: 메타 확장 기능](https://wiki.whatwg.org/wiki/MetaExtensions)
-* [ICBM - 위키 백과](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
-* [위치 정보 태그 - 위키 백과](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
+* [구글이 이해하는 메타 태그](https://support.google.com/webmasters/answer/79812?hl=en){: target="_blank"}
+* [WHATWG Wiki: 메타 확장 기능](https://wiki.whatwg.org/wiki/MetaExtensions){: target="_blank"}
+* [ICBM - 위키 백과](https://en.wikipedia.org/wiki/ICBM_address#Modern_use){: target="_blank"}
+* [위치 정보 태그 - 위키 백과](https://en.wikipedia.org/wiki/Geotagging#HTML_pages){: target="_blank"}
 
 **[⬆ 위로 이동](#table-of-contents)**
 
@@ -260,8 +260,8 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <link rel="icon" type="image/png" sizes="32x32" href="/path/to/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="/path/to/favicon-96x96.png">
 ```
-* [파비콘에 관한 모든 것(또는 터치 아이콘)](https://bitsofco.de/all-about-favicons-and-touch-icons/)
-* [파비콘 Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+* [파비콘에 관한 모든 것(또는 터치 아이콘)](https://bitsofco.de/all-about-favicons-and-touch-icons/){: target="_blank"}
+* [파비콘 Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet){: target="_blank"}
 
 **[⬆ 위로 이동](#table-of-contents)**
 
@@ -279,8 +279,8 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="">
 ```
-*   [페이스북 오픈 그래프 마크업](https://developers.facebook.com/docs/sharing/webmasters#markup)
-*   [오픈 그래프 프로토콜](http://ogp.me/)
+*   [페이스북 오픈 그래프 마크업](https://developers.facebook.com/docs/sharing/webmasters#markup){: target="_blank"}
+*   [오픈 그래프 프로토콜](http://ogp.me/){: target="_blank"}
 
 **[⬆ 위로 이동](#table-of-contents)**
 
@@ -295,8 +295,8 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <!-- 아티클의 스타일에 적용됩니다. -->
 <meta property="fb:article_style" content="myarticlestyle">
 ```
-*   [페이스북 인스던트 아티클: 아티클 작성법](https://developers.facebook.com/docs/instant-articles/guides/articlecreate)
-*   [인스던트 아티클 코드 샘플](https://developers.facebook.com/docs/instant-articles/reference)
+*   [페이스북 인스던트 아티클: 아티클 작성법](https://developers.facebook.com/docs/instant-articles/guides/articlecreate){: target="_blank"}
+*   [인스던트 아티클 코드 샘플](https://developers.facebook.com/docs/instant-articles/reference){: target="_blank"}
 
 **[⬆ 위로 이동](#table-of-contents)**
 
@@ -310,8 +310,8 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <meta name="twitter:description" content="Content description less than 200 characters">
 <meta name="twitter:image" content="https://example.com/image.jpg">
 ```
-*   [Twitter Cards: 가이드 문서](https://dev.twitter.com/cards/getting-started)
-*   [Twitter Card 검사기](https://cards-dev.twitter.com/validator)
+*   [Twitter Cards: 가이드 문서](https://dev.twitter.com/cards/getting-started){: target="_blank"}
+*   [Twitter Card 검사기](https://cards-dev.twitter.com/validator){: target="_blank"}
 
 **[⬆ 위로 이동](#table-of-contents)**
 
@@ -342,7 +342,7 @@ Pinterest를 사용하면 [도움말 센터](https://help.pinterest.com/en/artic
     href="http://example.com/services/oembed?url=http%3A%2F%2Fexample.com%2Ffoo%2F&amp;format=xml"
     title="oEmbed Profile: XML">
 ```
-*   [oEmbed format](http://oembed.com/)
+*   [oEmbed format](http://oembed.com/){: target="_blank"}
 
 **[⬆ 위로 이동](#table-of-contents)**
 
@@ -522,15 +522,15 @@ GZIP이 활성화되면 `href` 속성이 `a`, `base` 및 `link` 태그에 사용
 
 # 다른 자료
 
-*   [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
-*   [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
+*   [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md){: target="_blank"}
+*   [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md){: target="_blank"}
 
 # 관련 프로젝트들
 
-*   [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - `HEAD` 사용자 코드에 대한 Atom 패키지
-*   [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - `HEAD` 사용자 코드에 대한 Sublime Text 패키지
-*   [head-it](https://github.com/hemanth/head-it) - `HEAD` 사용자코드에 대한 CLI 인터페이스
-*   [vue-head](https://github.com/ktquez/vue-head) - Vue.js에서 `head`태그 메타 정보 다루기
+*   [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets){: target="_blank"} - `HEAD` 사용자 코드에 대한 Atom 패키지
+*   [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets){: target="_blank"} - `HEAD` 사용자 코드에 대한 Sublime Text 패키지
+*   [head-it](https://github.com/hemanth/head-it){: target="_blank"} - `HEAD` 사용자코드에 대한 CLI 인터페이스
+*   [vue-head](https://github.com/ktquez/vue-head){: target="_blank"} - Vue.js에서 `head`태그 메타 정보 다루기
 
 # 라이센스
 
@@ -539,6 +539,6 @@ GZIP이 활성화되면 `href` 속성이 `a`, `base` 및 `link` 태그에 사용
 
 #### 참조 블로그
 
-[<head> cheatsheet](http://gethead.info/#qq-mobile-browser)
+[<head> cheatsheet](http://gethead.info/#qq-mobile-browser){: target="_blank"}
 
 **[⬆ 위로 이동](#table-of-contents)**

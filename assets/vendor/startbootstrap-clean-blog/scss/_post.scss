@@ -77,8 +77,9 @@ article {
       margin-bottom: 10px;
     }
     > .post-subtitle {
-      font-weight: 300;
       margin: 0 0 10px;
+      font-weight: 300;
+      font-size: rem-calc(20);
     }
   }
   .post-info {
@@ -87,19 +88,17 @@ article {
     flex-flow:row wrap;
     align-content: space-around;
     justify-content: space-around;
-    > div {
-      width:50%;
-    }
   }
   .post-tags {
     display:flex;
+    width:60%;
     text-align:left;
     flex-direction:row;
     flex-flow:row wrap;
     align-content:flex-start;
     justify-content:flex-start;
     .tag {
-      margin:0 3px;
+      margin:5px 3px 3px;
       padding:0 10px;
       display:block;
       font-weight:700;
@@ -125,6 +124,7 @@ article {
     }
   }
   .post-meta {
+    width:40%;
     text-align:right;
     font-size: 1rem;
     font-style: italic;

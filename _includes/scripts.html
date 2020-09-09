@@ -1,6 +1,7 @@
 <script src="{{"/assets/vendor/jquery/jquery.min.js" | relative_url }}"></script>
 <script src="{{"/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" | relative_url }}"></script>
 <script src="{{"/assets/vendor/startbootstrap-clean-blog/js/clean-blog.min.js" | relative_url }}"></script>
+<script src="{{"/assets/libs/anime.min.js" | relative_url }}"></script>
 <script src="{{"/assets/libs/jquery.magnific-popup.min.js" | relative_url }}"></script>
 <script src="{{"/assets/tipuesearch/tipuesearch_content.js" | relative_url }}"></script>
 <script src="{{"/assets/tipuesearch/tipuesearch_set.js" | relative_url }}"></script>
@@ -88,14 +89,6 @@
 {% endif %}
 
 <script>
-  function changeTheme() {
-    if (localStorage.getItem('theme') === "dark") {
-      localStorage.setItem('theme', '');
-    } else {
-      localStorage.setItem('theme', 'dark');
-    }
-    location.reload();
-  }
   function filterByTagName(tagName) {
     $('.hidden').removeClass('hidden');
     $('.post-wrapper').each((index, elem) => {
@@ -119,7 +112,7 @@
       currentTag = queryTag;
       filterByTagName(currentTag)
     }
-    $("[data-tag]").click((e) => {
+    $("[data-tag]").on('click', function(e) {
       currentTag = e.target.dataset.tag;
       filterByTagName(currentTag);
       updateQueryString(currentTag);

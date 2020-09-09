@@ -4,10 +4,16 @@ layout: default
 ---
 
 <style type="text/css" media="screen">
+  #mainNav {
+   background-color:#212529; 
+  }
   .container {
     margin: 10px auto;
     max-width: 600px;
     text-align: center;
+  }
+  #error404 {
+    margin-top:15%;
   }
   h1 {
     margin: 30px 0;
@@ -15,11 +21,17 @@ layout: default
     line-height: 1;
     letter-spacing: -1px;
   }
+
+  @media only screen and (max-width:991px) {
+    #error404 {
+      margin-top:30%;
+    }
+  }
 </style>
 
-<div class="container">
-  <h1>404</h1>
+<div class="container" id="error404">
+  <h1>Error 404</h1>
 
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
+  <p><strong>페이지를 찾을 수 없습니다 :(</strong></p>
+  <p>요청하신 페이지를 찾을 수 없습니다.</p>
 </div>

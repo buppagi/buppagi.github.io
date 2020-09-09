@@ -4,7 +4,6 @@ title: "🕹 디스코드 다운로드 방법 및 계정만들기"
 subtitle: "디스코드 다운로드 및 가입방법을 알려드립니다."
 date: 2020-03-06 16:45:35 +0900
 background: '/img/posts/2019-10-28/discord-download.png'
-categories: [it-infor]
 tags: [discord, it-infor, programs]
 comments: true
 ---

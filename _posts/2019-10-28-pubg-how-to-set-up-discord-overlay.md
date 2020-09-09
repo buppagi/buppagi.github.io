@@ -4,7 +4,6 @@ title: "🎮 [배틀그라운드] 디스코드 오버레이 설정방법"
 subtitle: "게임화면 위에 디스코드 사람들 표시하는 방법입니다."
 date: 2019-10-28 22:12:40 +0900
 background: '/img/posts/2019-10-28/discord-logo.jpg'
-categories: [it-infor]
 tags: [it-infor, programs]
 comments: true
 ---
