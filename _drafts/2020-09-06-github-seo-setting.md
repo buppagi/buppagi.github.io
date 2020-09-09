@@ -5,6 +5,6 @@ subtitle: "검색엔진이 이해하기 쉽도록 홈페이지 구조를 설정�
 date: 2020-03-06 16:45:35 +0900
 background: ''
 categories: [Web Tech]
-tags: [it-infor, github, seo]
+tags: [it-infor, github, blog, seo]
 comments: true
 ---
