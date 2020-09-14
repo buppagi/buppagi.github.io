@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: About
 description: This is what I do.
 background: '/img/bg-main.jpg'
 permalink: /about/

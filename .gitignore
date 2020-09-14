@@ -4,3 +4,7 @@ _site
 node_modules
 *.gem
 *.zip
+.vscode/
+.bundle
+.DS_Store
+Gemfile.lock
