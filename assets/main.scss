@@ -261,6 +261,24 @@ main {
   }
 }
 
+.category-wrap {
+  .category-title {
+    margin-top:rem-calc(70);
+    margin-bottom:rem-calc(50);
+    a {
+      font-weight:inherit;
+      font-size:rem-calc(40);
+      color:$dark;
+    }
+  }
+  .posts-list {
+    h3 {
+      margin:0;
+      font-size:rem-calc(20);
+    }
+  }
+}
+
 .catalogue {
   a {
     color:$dark;
@@ -303,11 +321,19 @@ main {
     font-size: rem-calc(36);
   }
 }
-.catalogue-content {
-  margin:0 0 rem-calc(20);
-  font-size: rem-calc(20);
+.catalogue-desc {
+  margin:0;
+  font-weight:400;
+  font-size:rem-calc(14);
   @media only screen and (min-width: 768px) {
-    font-size: rem-calc(24);
+    font-size: rem-calc(20);
+  }
+}
+.catalogue-content {
+  margin:rem-calc(30) 0 rem-calc(20);
+  font-size: rem-calc(16);
+  @media only screen and (min-width: 768px) {
+    font-size: rem-calc(20);
   }
 }
 
@@ -352,6 +378,67 @@ main {
     color:$white;
     i {
       color:$yellow;
+    }
+  }
+}
+
+.post-footer {
+  margin-bottom:3%;
+  display:flex;
+  justify-content: space-between;
+  > div {
+    &:first-child {
+      max-width:40%;
+    }
+    &:last-child {
+      max-width:60%;
+    }
+  }
+  h2 {
+    margin:rem-calc(40) 0 rem-calc(20) 0;
+  }
+  .fas {
+    font-size:rem-calc(16);
+  }
+  .post-tag {
+    margin:0;
+    a {
+      text-decoration:none;
+      &:focus,
+      &:hover {
+        text-decoration:underline;
+      }      
+    }
+  }
+}
+
+// pagination
+.pagination {
+  position: relative;
+  margin:0 auto;
+  display:block;
+  text-align: center;
+  font-size:rem-calc(22);
+  padding:rem-calc(40) 0 rem-calc(30) 0;
+  a {
+    position: absolute;
+    display:block;
+    text-decoration:none;
+    &.fa-chevron-left {
+      left:0;
+    }
+    &.fa-chevron-right {
+      right:0;
+    }
+  }
+  span {
+    &.page_info {
+      display:inline-block;
+      font-size: rem-calc(18);
+    }
+    &.pagination-selected {
+      display: inline-block;
+      font-size: 1.3rem;
     }
   }
 }
@@ -530,6 +617,18 @@ html {
       }
     }
 
+    .tag-wrap {
+      a {
+        color:$secondary;
+        &:hover {
+          color:$light;
+        }
+      }
+      .fas {
+        color:$light;
+      }
+    }
+
     .btn_theme {
       background-color:#333638;
       i, .text {
@@ -541,6 +640,21 @@ html {
         i {
           color:$orange;
         }
+      }
+    }
+    
+    .pagination {
+      .fas {
+        color:$light;
+        &:hover {
+          color:#de4337;
+        }
+      }
+    }
+
+    .post-footer {
+      .fas {
+        color:$light;
       }
     }
 

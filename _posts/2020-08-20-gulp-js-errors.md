@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "⚠️ Gulp.js 설치 오류 정리"
-subtitle: "gulp.js에 관련 오류를 정리해놓았습니다."
+description: "gulp.js에 관련 오류를 정리해놓았습니다."
 date: 2020-08-20 16:45:35 +0900
 background: '/img/posts/2020-08-20/gulpjs.jpg'
+categories: []
 tags: [gulpjs, javascript, npm]
 comments: true
 ---

@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "워드프레스 'Post-processing of the image failed' 해결방법"
-subtitle: "워드프레스 용량이 큰 이미지가 업로드가 안되는 것을 올리는 방법을 안내합니다."
+description: "워드프레스 용량이 큰 이미지가 업로드가 안되는 것을 올리는 방법을 안내합니다."
 date: 2020-01-29 22:15:35 +0900
 background: ''
+categories: []
 tags: [wordpress]
 comments: true
 ---

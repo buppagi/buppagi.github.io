@@ -76,10 +76,10 @@ article {
       margin-top: 30px;
       margin-bottom: 10px;
     }
-    > .post-subtitle {
+    > .post-description {
       margin: 0 0 10px;
       font-weight: 300;
-      font-size: rem-calc(20);
+      font-size: rem-calc(14);
     }
   }
   .post-info {
@@ -124,29 +124,20 @@ article {
     }
   }
   .post-meta {
-    width:40%;
+    display:block;
     text-align:right;
-    font-size: 1rem;
+    font-size: rem-calc(18);
     font-style: italic;
     margin-top: 0;
     color: $gray-600;
-    > a {
-      text-decoration: none;
-      color: $gray-900;
-      &:focus,
-      &:hover {
-        text-decoration: underline;
-        color: $primary;
-      }
-    }
   }
   @media only screen and (min-width: 768px) {
     > a {
       > .post-title {
         font-size: rem-calc(36);
       }
-      > .post-subtitle {
-        font-size: rem-calc(29);
+      > .post-description {
+        font-size: rem-calc(20);
       }
     }
   }

@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "😴 넷플릭스를 이용하여 영어공부하는 방법(구글 확장프로그램  이용)"
-subtitle: "미드를 보면서 구간반복, 동시자막의 어려움을 해결 해주는 프로그램을 소개합니다."
+description: "미드를 보면서 구간반복, 동시자막의 어려움을 해결 해주는 프로그램을 소개합니다."
 date: 2020-03-14 14:45:25 +0900
 background: '/img/posts/2020-03-14/bg-netflix.png'
-tags: [it-infor, webstore, netflix]
+categories: []
+tags: [IT정보, 웹스토어, 넷플릭스]
 comments: true
 ---
 

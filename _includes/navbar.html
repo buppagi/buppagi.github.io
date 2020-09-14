@@ -7,14 +7,17 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="{{"/about" | relative_url }}">About</a>
+          <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{ "/posts" | relative_url }}">Posts</a>
+          <a class="nav-link" href="{{ '/about' | relative_url }}">About</a>
         </li>
         <!-- <li class="nav-item">
-          <a class="nav-link" href="{{ "/category" | relative_url }}">Category</a>
+          <a class="nav-link" href="{{ '/category' | relative_url }}">Category</a>
         </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/tags' | relative_url }}">Tags</a>
+        </li>
         <li class="nav-item">
           <button class="search-toggle" data-toggle="tooltip" title="검색">
             <span class="text">Search</span>
