@@ -49,11 +49,19 @@ $(function () {
   $('#tipue_search_input').tipuesearch({
     'wholeWords': false, //한글 검색을 가능하게 하는 옵션
     'showTime': false, //검색이 완료되기 까지 소요된 시간을 표시하는 옵션
-    'minimumLength': 1 //최소 검색 글자수에 대한 설정으로 필자는 한단어 이상이면 검색가능하게 설정
+    'minimumLength': 2 //최소 검색 글자수에 대한 설정으로 필자는 한단어 이상이면 검색가능하게 설정
+  }).on('change keyup', function(){
+    var txtLen = $(this).val().length;
+    if (txtLen > 0) {
+      $('.search-form__reset').removeAttr('disabled');
+    } else {
+      $('.search-form__reset').attr('disabled', true);
+    }
   });
   // 지운 후 input로 포커스 이동
   $('.search-form__reset').on('click', function(){
-    $('#tipue_search_input').focus();
+    $('#tipue_search_input').val('').focus();
+    $(this).attr('disabled', true);
   });
 });
 
