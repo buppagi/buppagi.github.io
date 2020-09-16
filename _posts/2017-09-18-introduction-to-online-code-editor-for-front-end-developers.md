@@ -3,7 +3,7 @@ layout: post
 title: "👍 프론트 엔드 개발자를 위한 온라인 코드 에디터 소개"
 description: "온라인에서도 쉽게 사용할 수 있는 에디터를 소개합니다."
 date: 2017-09-18 12:47:00 +0900
-background: 'https://i1.wp.com/www.buppagistar.com/wp-content/uploads/2017/09/StockSnap_CWYK8CLC61.jpg'
+background: "/img/bg/StockSnap_CWYK8CLC61.jpg"
 categories: [UI  개발]
 tags: [UI 개발, 개발도구, 에디터]
 comments: true
