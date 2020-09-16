@@ -24,7 +24,7 @@ comments: true
 		<p class="content-cards__title">Discord | 대화하고, 어울리는 공간</p>
 		<p class="content-cards__description">Discord를 사용하면 손쉽게 음성, 영상, 텍스트로 이야기를 나눌 수 있답니다. 친구, 커뮤니티와 대화하고, 채팅하고, 어울려보세요.</p>
 		<div class="content-cards__site-name">
-      <img src="/img/posts/2020-03-06/author.png" alt="" class="content-cards__site-name--favicon" width="16" height="16"> www.discord.com
+      <img src="/img/posts/2020/03/author.png" alt="" class="content-cards__site-name--favicon" width="16" height="16"> www.discord.com
 		</div>
 	</a>
 </div>
