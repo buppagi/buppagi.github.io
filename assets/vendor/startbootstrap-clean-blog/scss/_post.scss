@@ -147,10 +147,14 @@ article {
 .content-cards {
   margin:0 auto 20px;
   padding: 3px;
-  max-width: percentage(600/760);
+  width:auto;
+  max-width: percentage(730/750);
   background-color:$white;
   border: 1px solid;
   border-color: #e9eaed #dadada #ccc;
+  @media only screen and (min-width: 768px) {
+    max-width: percentage(600/768);
+  }
   img {
     max-width:100%;
     width:auto;
@@ -164,6 +168,23 @@ article {
     }
   }
   @include e('image') {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    &.not {
+      min-height: 125px;
+      background-color:#e3e3e3;
+      @media only screen and (min-width: 768px) {
+        min-height:250px;
+      }
+      [class^=fa] {
+        font-size: rem-calc(150/2);
+        color: $white;
+        @media only screen and (min-width: 768px) {
+          font-size: rem-calc(150);
+        }
+      }
+    }
     img {
       margin:0 auto;
     }

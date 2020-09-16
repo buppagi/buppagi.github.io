@@ -566,6 +566,14 @@ html {
     .content-cards {
       background-color:#2c2d30;
       border-color:$gray-500 $gray-600 $gray-700;
+      @include e('image') {
+        &.not {
+          background-color:#333638;
+          [class^=fa] {
+            color: $gray-400;
+          }
+        }
+      }
       @include e('title') {
         color:$white;
       }
