@@ -55,18 +55,18 @@ search                   : true # true, false (default)
 search_full_content      : true # true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  application_id         : RB27A031YL # YOUR_APPLICATION_ID
+  index_name             : blog # YOUR_INDEX_NAME
+  search_only_api_key    : 79e93cfef1f2435a96460517c9866b6c # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : false # true (default), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  search_engine_id       : # c18a5386c49317b7c # YOUR_SEARCH_ENGINE_ID
   instant_search         : # false (default), true
 # SEO Related
-google_site_verification :
+google_site_verification : 56U4iaZj88XvIq6R70OpcKkZfYAlUUkqPcksIRVEtuM
 bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
+yandex_site_verification : 0586d22fb0eb490e
+naver_site_verification  : 9ebbb0b55674aeab90f642b554635c6e7d4c51f6
 
 # Social Sharing
 twitter:
@@ -85,9 +85,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-176873649-1"
     anonymize_ip         : # true, false (default)
 
 
@@ -224,6 +224,8 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-algolia
+  - jemoji
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -232,6 +234,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-algolia
+  - jemoji
 
 
 # Archives
