@@ -1,7 +1,6 @@
 ---
 title: "😄 Sublime Text 3 입력시 불필요한 공백 제거하기"
 date: 2017-01-17 15:56:00 +0900
-background: ""
 categories: [개발도구]
 tags: [UI 개발, 개발도구, sublime text]
 comments: true

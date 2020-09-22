@@ -1,15 +1,13 @@
 ---
 title: "🔥 TIL 기본 규칙"
-excerpt: ""
 date: 2020-09-20 22:15:29 +0900
-background: ''
 categories: [TIL]
 tags: [TIL, TID, TIF]
 ---
 
 ## 🔥 TIL 규칙 만들기 🔥
 
-- ⌚️ 시간관리
+- ⌚️ 시간
   - 🌅 **기상시간:**
   - 🌇 **마감시간:**
   - **오늘의 날씨:**
@@ -22,6 +20,10 @@ tags: [TIL, TID, TIF]
 
 한줄의 요약과 날씨는 그때 그때 작성하도록 하자.
 
+TIL: Today I learned - 오늘의 할 일
+TID: Today I Dream or Done 내일 할 일 또는 오늘의 할일 마침.
+TIF: Today I Feel - 느낀점
+
 ## 이모지 적절하게 사용하기
 
-🔥 ✍ 📔 📒 📓 🎮 🖊️ ✒️ ✏️ 🖌️ 🖍️ 📝 🔖 📑 ❓ ❌ ❗ ✔️ 🖥️ 🎂
+🔥 ✍ 📔 📒 📓 🎮 🖊️ ✒️ ✏️ 🖌️ 🖍️ 📝 🔖 📑 ❓ ❌ ❗ ✔️ 🖥️ 🎂 📅

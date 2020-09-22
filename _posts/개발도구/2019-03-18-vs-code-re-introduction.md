@@ -2,8 +2,9 @@
 title: "😄 VS CODE 입문! (설치하기)"
 excerpt: "Visual Studio Code 설치 및 설치하면 좋은 확장팩들을 소개합니다."
 date: 2019-03-18 16:06:00 +0900
-background: "/assets/images/posts/2019/03/vscode-home-screenshot-win-lg.png"
-categories: [UI 개발]
+header: 
+  overlay_image: "/assets/images/posts/2019/03/vscode-home-screenshot-win-lg.png"
+categories: [개발도구]
 tags: [UI 개발, 개발도구, 에디터, vs code]
 comments: true
 ---

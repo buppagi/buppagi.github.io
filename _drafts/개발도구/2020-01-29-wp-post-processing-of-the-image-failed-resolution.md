@@ -3,8 +3,8 @@ title: "워드프레스 'Post-processing of the image failed' 해결방법"
 excerpt: "워드프레스 용량이 큰 이미지가 업로드가 안되는 것을 올리는 방법을 안내합니다."
 date: 2020-01-29 22:15:35 +0900
 background: ''
-categories: [DevTools]
-tags: [워드프레스, UI개발, 개발도구]
+categories: [개발도구]
+tags: [워드프레스, UI 개발, 개발도구]
 comments: true
 ---
 

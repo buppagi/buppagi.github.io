@@ -48,7 +48,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <script src="script.js"></script>
 <noscript><!-- JS 없을 때--></noscript>
 ```
-**[⬆ 위로 이동](#table-of-content)**
 
 # 메타(Meta)
 ```html
@@ -142,7 +141,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 * [ICBM - 위키 백과](https://en.wikipedia.org/wiki/ICBM_address#Modern_use){: target="_blank"}
 * [위치 정보 태그 - 위키 백과](https://en.wikipedia.org/wiki/Geotagging#HTML_pages){: target="_blank"}
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 # 링크(Link)
 ```html
@@ -214,7 +212,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <link rel="preload" href="image.png" as="image">
 <!-- 더 많은 정보: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## 파비콘(Favicons)
 ```html
@@ -229,7 +226,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 * [파비콘에 관한 모든 것(또는 터치 아이콘)](https://bitsofco.de/all-about-favicons-and-touch-icons/){: target="_blank"}
 * [파비콘 Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet){: target="_blank"}
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 # 소셜(Social)
 
@@ -248,7 +244,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 *   [페이스북 오픈 그래프 마크업](https://developers.facebook.com/docs/sharing/webmasters#markup){: target="_blank"}
 *   [오픈 그래프 프로토콜](http://ogp.me/){: target="_blank"}
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## 페이스북 인스던트 아티클
 ```html
@@ -264,7 +259,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 *   [페이스북 인스던트 아티클: 아티클 작성법](https://developers.facebook.com/docs/instant-articles/guides/articlecreate){: target="_blank"}
 *   [인스던트 아티클 코드 샘플](https://developers.facebook.com/docs/instant-articles/reference){: target="_blank"}
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## 트위터(Twitter)
 ```html
@@ -279,7 +273,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 *   [Twitter Cards: 가이드 문서](https://dev.twitter.com/cards/getting-started){: target="_blank"}
 *   [Twitter Card 검사기](https://cards-dev.twitter.com/validator){: target="_blank"}
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## Google+ / Schema.org
 ```html
@@ -288,7 +281,6 @@ HTML을 사용하면서 `<meta>`태그를 사용하긴 하는데 대충 이해<s
 <meta itemprop="description" content="Content description less than 200 characters">
 <meta itemprop="image" content="https://example.com/image.jpg">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## Pinterest
 
@@ -297,7 +289,6 @@ Pinterest를 사용하면 [도움말 센터](https://help.pinterest.com/en/artic
 ```html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## OEmbed
 ```html
@@ -310,7 +301,6 @@ Pinterest를 사용하면 [도움말 센터](https://help.pinterest.com/en/artic
 ```
 *   [oEmbed format](http://oembed.com/){: target="_blank"}
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 # 브라우저 / 플랫폼
 
@@ -339,14 +329,12 @@ Pinterest를 사용하면 [도움말 센터](https://help.pinterest.com/en/artic
 ```
 *   [Apple Meta 태그](https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## Apple Safari
 ```html
 <!-- 고정 된 사이트 -->
 <link rel="mask-icon" href="/path/to/icon.svg" color="red">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## Google Android
 ```html
@@ -360,7 +348,6 @@ Pinterest를 사용하면 [도움말 센터](https://help.pinterest.com/en/artic
 <meta name="google-play-app" content="app-id=package-name">
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## Google Chrome
 ```html
@@ -369,7 +356,6 @@ Pinterest를 사용하면 [도움말 센터](https://help.pinterest.com/en/artic
 <!-- 번역 프롬프트 사용 중지  -->
 <meta name="google" content="notranslate">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## Google Chrome Mobile (Android Only)
 
@@ -387,7 +373,6 @@ Chrome 31부터는 웹 앱을 Safari와 같은 '앱 모드'로 설정할 수 있
 ```
 *   [Google Developer](https://developer.chrome.com/multidevice/android/installtohomescreen)
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## Microsoft Internet Explorer
 ```html
@@ -413,7 +398,6 @@ Chrome 31부터는 웹 앱을 Safari와 같은 '앱 모드'로 설정할 수 있
 <meta name="msapplication-notification" content="frequency=60;polling-uri=http://example.com/livetile;polling-uri2=http://example.com/livetile2">
 <meta name="msapplication-task-separator" content="1">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 # App Links
 ```html
@@ -431,7 +415,6 @@ Chrome 31부터는 웹 앱을 Safari와 같은 '앱 모드'로 설정할 수 있
 ```
 *   [App Links Docs](http://applinks.org/documentation/)
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 # Browsers (Chinese)
 
@@ -440,7 +423,6 @@ Chrome 31부터는 웹 앱을 Safari와 같은 '앱 모드'로 설정할 수 있
 <!-- 렌더링 엔진 선택 -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## QQ Mobile Browser
 ```html
@@ -451,7 +433,6 @@ Chrome 31부터는 웹 앱을 Safari와 같은 '앱 모드'로 설정할 수 있
 <!-- 페이지가 "응용 프로그램 모드"로 표시된다 (전체 화면 등). -->
 <meta name="x5-page-mode" content="app">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 ## UC Mobile Browser
 ```html
@@ -472,7 +453,6 @@ Chrome 31부터는 웹 앱을 Safari와 같은 '앱 모드'로 설정할 수 있
 ```
 *   [UC Browser Docs](http://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ 위로 이동](#table-of-contents)**
 
 # 노트
 
@@ -484,7 +464,6 @@ GZIP이 활성화되면 `href` 속성이 `a`, `base` 및 `link` 태그에 사용
 ```html
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 ```
-**[⬆ 위로 이동](#table-of-contents)**
 
 # 다른 자료
 
@@ -507,4 +486,3 @@ GZIP이 활성화되면 `href` 속성이 `a`, `base` 및 `link` 태그에 사용
 
 [<head> cheatsheet](http://gethead.info/#qq-mobile-browser){: target="_blank"}
 
-**[⬆ 위로 이동](#table-of-contents)**

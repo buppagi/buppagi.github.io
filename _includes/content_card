@@ -1,10 +1,17 @@
 <div class="content-cards">
 	<a href="{{ include.link_path }}" class="content-cards__link" target="_blank" rel="noopener noreferrer">
-		<div class="content-cards__image"><img src="{{ include.image_path | relative_url }}" alt="{% if include.alt %}{{ include.alt }}{% endif %}"></div>
-		<p class="content-cards__title">{{ include.title }}</p>
+		{% if include.image_path %}
+		<div class="content-cards__image">
+				<img src="{{ include.image_path | relative_url }}" alt="{% if include.alt %}{{ include.alt }}{% endif %}">
+		{% else %}
+		<div class="content-cards__image not">
+			<i class="far fa-images"></i>
+		{% endif %} 
+		</div>
+		<p class="content-cards__title" role="heading" aria-level="4">{{ include.title }}</p>
     {% if include.description %}
 		  <p class="content-cards__description">{{ include.description }}</p>
     {% endif %} 
-		<div class="content-cards__site-name"><img src="{{ include.fav_path }}" alt="" class="content-cards__site-name--favicon" width="16" height="16"> {{include.site_url }}</div>
+		<div class="content-cards__site-name"> {% if include.fav_path %}<img src="{{ include.fav_path }}" alt="" class="content-cards__site-name--favicon" width="16" height="16">{% endif %} {{include.site_url }}</div>
 	</a>
 </div> 

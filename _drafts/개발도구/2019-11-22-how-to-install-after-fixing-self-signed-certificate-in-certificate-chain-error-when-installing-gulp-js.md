@@ -3,8 +3,8 @@ title: "Gulp.js 설치시 self signed certificate in certificate chain 에러 �
 excerpt: "워드프레스 용량이 큰 이미지가 업로드가 안되는 것을 올리는 방법을 안내합니다."
 date: 2019-11-22 11:32:35 +0900
 background: ''
-categories: []
-tags: [개발도구, UI개발, gulp]
+categories: [개발도구]
+tags: [개발도구, UI 개발, gulpjs]
 comments: true
 ---
 

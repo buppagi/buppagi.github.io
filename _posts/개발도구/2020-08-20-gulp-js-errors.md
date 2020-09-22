@@ -2,7 +2,8 @@
 title: ":warning: Gulp.js 설치 오류 정리"
 excerpt: "gulp.js에 관련 오류를 정리해놓았습니다."
 date: 2020-08-20 16:45:35 +0900
-background: '/img/posts/2020/08/gulpjs.jpg'
+header: 
+  overlay_image: "/assets/images/posts/2020/08/gulpjs.jpg"
 categories: [개발도구]
 tags: [UI 개발, gulpjs, javascript, npm]
 comments: true

@@ -55,13 +55,13 @@
     @include e('title') {
       margin:10px 15px 7px 15px;
       font-weight:800;
-      font-size:rem-calc(22);
+      font-size:em(22);
       line-height:1.5;
       color:$dark;
     }
     @include e('description') {
       margin:7px 15px 10px 15px;
-      font-size:rem-calc(16);
+      font-size:em(16);
       line-height:1.5;
       color:$dark;
     }

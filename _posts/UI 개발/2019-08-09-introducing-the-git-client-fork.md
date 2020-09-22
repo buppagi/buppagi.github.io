@@ -2,9 +2,10 @@
 title: "⭐️ Git 클라이언트 Fork를 소개합니다."
 excerpt: "Git 클라이언트 중에 소개가 안된 Fork 클라이언트에 대해서 짧게 소개를 하려고합니다."
 date: 2019-08-09 09:37:00 +0900
-background: "/img/posts/2019/08/fork02.jpg"
-categories: [UI 개발]
-tags: [UI 개발, 개발도구, git]
+header: 
+  overlay_image: "/assets/images/posts/2019/08/fork02.jpg"
+categories: [개발도구]
+tags: [UI 개발, 개발도구, git, 클라이언트, fork]
 comments: true
 ---
 
@@ -21,13 +22,13 @@ Mac과 Window버전을 다운 받을 수 있으며 아직까지 리눅스 버전
 
 기본 소스폴더 지정을 하게되면 프로그램 실행하면서 하위 디렉토리에 모든 git 저장소를 찾아서 보여줍니다.
 
-![git-fork 클라이언트 설치 화면 갈무리](/img/posts/2019/08/Fork01-1.png)
+![git-fork 클라이언트 설치 화면 갈무리](/assets/images/posts/2019/08/Fork01-1.png)
 
-![git-fork 어두운 테마 화면 갈무리](/img/posts/2019/08/Fork02-1.jpg)
+![git-fork 어두운 테마 화면 갈무리](/assets/images/posts/2019/08/Fork02-1.jpg)
 
 처음에 설치화면 화면이 밝은 세상인데 상단에 Theme 버튼을 누르면 어둡게 변경할 수 있습니다.
 
-![git-fork 홈페이지 화면설명 갈무리 한것입니다.](/img/posts/2019/08/Fork02.png)
+![git-fork 홈페이지 화면설명 갈무리 한것입니다.](/assets/images/posts/2019/08/Fork02.png)
 
 [https://git-fork.com/](https://git-fork.com/){: target="_blank" rel="noopener noreferrer"}에 가면 위의 캡처럼 설명이 나옵니다.  
 홈페이지에 가서 설명을 보시면 알 수 있지만 다른 클라이언트들이 되는 것은 다 되는 거같습니다.  
@@ -35,14 +36,14 @@ Mac과 Window버전을 다운 받을 수 있으며 아직까지 리눅스 버전
 소스트리보단 확실히 가볍고 빠릅니다.  
 깃 크라켄과 비교를 하면 좀 더 사용해봐야 알듯 싶네요.
 
-![이미지도 버전관리가 됩니다.](/img/posts/2019/08/ImageDiffWin.jpg)
+![이미지도 버전관리가 됩니다.](/assets/images/posts/2019/08/ImageDiffWin.jpg)
 
-![git-fork 홈페이지 갈무리](/img/posts/2019/08/MergeConflictWin1.jpg)
+![git-fork 홈페이지 갈무리](/assets/images/posts/2019/08/MergeConflictWin1.jpg)
 
 충돌났을 경우 좀 더 쉽게 UI 가 표현이 됩니다.
 충돌이 날 경우 다른 클라이언트들은 히스토리처럼 텍스트나 diff로 보여지는 반면에 git-fork는 위의 화면처럼 보여집니다.
 
-![](/img/posts/2019/08/RepositoryManagerWin.jpg)
+![](/assets/images/posts/2019/08/RepositoryManagerWin.jpg)
 
 위에서 설명했듯이 처음에 기본 소스폴더를 지정하면 위의 화면처럼 저장소 매니저에 그 하위 폴더 검색을 해서 모두 나옵니다.
 
