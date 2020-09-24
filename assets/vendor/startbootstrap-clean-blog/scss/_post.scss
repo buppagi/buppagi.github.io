@@ -1,0 +1,220 @@
+// Styling for the post page
+figure {
+  &.image {
+    figcaption {
+      padding:10px;
+      font-size: rem-calc(14);
+      font-style: italic;
+      text-align: center;
+      color:#999;
+    }
+  }
+}
+
+article {
+  &.post-preview {
+    transform:translateX(0px);
+    transition:0.5s;
+    &:before {
+      position:absolute;
+      left:-20px;
+      display:block;
+      width:5px;
+      height:100%;
+      background-color:$primary;
+      transition:0.5s;
+      opacity:0;
+      content:'';
+    }
+    &:hover {
+      transform:translateX(10px);
+      &:before {
+        opacity:1;
+      }
+    }
+  }
+}
+
+.post-tags__all {
+  .tag {
+    display:inline-block;
+    padding:0 10px;
+    font-weight:700;
+    font-size:14px;
+    line-height:24px;
+    color:#0366d6;
+    background:#f1f8ff;
+    border:1px solid transparent;
+    border-radius:2em;
+    box-sizing:border-box;
+    transition:0.5s;
+    cursor:pointer;
+    &.selected,
+    &:hover {
+      background-color:#def;
+    }
+  }
+}
+
+.post-wrapper {
+  display:block;
+  &.hidden {
+    display:none;
+  }
+}
+
+.post-preview {
+  > a {
+    color: $gray-900;
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      color: $primary;
+    }
+    > .post-title {
+      font-size: 30px;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    > .post-description {
+      margin: 0 0 10px;
+      font-weight: 300;
+      font-size: rem-calc(14);
+    }
+  }
+  .post-info {
+    display:flex;
+    flex-direction:row;
+    flex-flow:row wrap;
+    align-content: space-around;
+    justify-content: space-around;
+  }
+  .post-tags {
+    display:flex;
+    width:60%;
+    text-align:left;
+    flex-direction:row;
+    flex-flow:row wrap;
+    align-content:flex-start;
+    justify-content:flex-start;
+    .tag {
+      margin:5px 3px 3px;
+      padding:0 10px;
+      display:block;
+      font-weight:700;
+      font-size:12px;
+      line-height:22px;;
+      color:#0366d6;
+      background:#f1f8ff;
+      box-sizing:border-box;
+      border-radius:2em;
+      white-space: nowrap;
+      cursor:pointer;
+      transition:0.5s;
+      &.selected,
+      &:hover {
+        background-color:#def;
+      }
+      &:first-child {
+        margin-left:0;
+      }
+      &:last-child {
+        margin-right:0;
+      }
+    }
+  }
+  .post-meta {
+    display:block;
+    text-align:right;
+    font-size: rem-calc(18);
+    font-style: italic;
+    margin-top: 0;
+    color: $gray-600;
+  }
+  @media only screen and (min-width: 768px) {
+    > a {
+      > .post-title {
+        font-size: rem-calc(36);
+      }
+      > .post-description {
+        font-size: rem-calc(20);
+      }
+    }
+  }
+}
+
+
+.content-cards {
+  margin:0 auto 20px;
+  padding: 3px;
+  width:auto;
+  max-width: percentage(730/750);
+  background-color:$white;
+  border: 1px solid;
+  border-color: #e9eaed #dadada #ccc;
+  @media only screen and (min-width: 768px) {
+    max-width: percentage(600/768);
+  }
+  img {
+    max-width:100%;
+    width:auto;
+  }
+  @include e('link') {
+    display:block;
+    text-decoration:none;
+    &:focus,
+    &:hover {
+      text-decoration:inherit;
+    }
+  }
+  @include e('image') {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    &.not {
+      min-height: 125px;
+      background-color:#e3e3e3;
+      @media only screen and (min-width: 768px) {
+        min-height:250px;
+      }
+      [class^=fa] {
+        font-size: rem-calc(150/2);
+        color: $white;
+        @media only screen and (min-width: 768px) {
+          font-size: rem-calc(150);
+        }
+      }
+    }
+    img {
+      margin:0 auto;
+    }
+  }
+  @include e('title') {
+    margin:10px 15px 7px 15px;
+    font-weight:bold;
+    font-size:rem-calc(22);
+    line-height:1.5;
+    color:$dark;
+  }
+  @include e('description') {
+    margin:7px 15px 10px 15px;
+    font-size:rem-calc(16);
+    line-height:1.5;
+    color:$dark;
+  }
+  @include e('site-name') {
+    margin: 10px 15px;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #9197a3;
+    text-align: right;
+    text-transform: uppercase;
+    @include m('favicon') {
+      display:inline;
+      width:auto;
+      max-width:100%;
+      max-height:24px;
+    }
+  }
+}

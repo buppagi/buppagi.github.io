@@ -1,0 +1,13 @@
+{% include post-tags.html %}
+
+{% assign category = page.categories[ 0 ] %}
+<div class="post-footer">
+  <div>
+    <h2 id="Category">Category</h2>
+    <a href="/category/{{ category }}">{{ category }}</a>
+  </div>
+  <div>
+    <h2 id="Tags">Tags</h2>
+    <p class="post-tag">{{ tags_list }}</p>
+  </div>
+</div>
