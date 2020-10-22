@@ -1,0 +1,22 @@
+{% if page.previous or page.next %}
+  <nav class="pagination">
+    {% if page.previous %}
+      <a href="{{ page.previous.url | relative_url }}" class="pagination--pager" title="{{ page.previous.title | markdownify | strip_html }}">
+        <p>{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }} 글</p>{{ page.previous.title | markdownify | strip_html }}
+      </a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">
+        <p>{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</p>이전 글이 없습니다.
+      </a>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url | relative_url }}" class="pagination--pager" title="{{ page.next.title | markdownify | strip_html }}">
+        <p>{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }} 글</p>{{ page.next.title | markdownify | strip_html }}
+      </a>
+    {% else %}
+      <a href="#" class="pagination--pager disabled">
+        <p>{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</p>다음 글이 없습니다.
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
