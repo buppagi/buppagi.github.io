@@ -116,7 +116,7 @@ author:
       url: "https://github.com/buppagi"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: ""
+      url:
 
 # Site Footer
 footer:
@@ -138,7 +138,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: ""
+      url:
 
 
 # Reading Files
@@ -204,9 +204,9 @@ sass:
 
 
 # Outputting
-permalink: /:title/
+permalink: /:categories/:title/
 paginate: 10 # amount of posts to show
-paginate_path: /page/:num
+paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 collections:

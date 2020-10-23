@@ -1,10 +1,12 @@
 # main links
 main:
-  - title: "Posts"
-    url: /posts/
+  - title: "블로그 방문하기"
+    url: "https://meilcoding.com"
+  - title: "명대사"
+    url: /categories/명대사/
   - title: "Category"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  # - title: "Quick-Start Guide"
-  #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    url: /about/
