@@ -1,0 +1,3 @@
+<div class="{{ include.type }}-wrapper">
+  <div class="{{ include.type }}">{{ include.description }}</div>
+</div>

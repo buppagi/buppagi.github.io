@@ -258,3 +258,124 @@ ins.adsbygoogle {
   margin-top:em(8);
   border-bottom:0;
 }
+
+
+/* Admonitions CSS */
+.note,
+.tip,
+.caution,
+.important,
+.danger,
+.notice,
+.warnig {
+  display: block;
+  margin: 0;
+  padding: 20px 18px 20px 65px;
+  line-height: 1.4em;
+  color:$text-color;
+  background:$background-color;
+  &:before {
+    font-family: Font Awesome\ 5 Free;
+    font-weight: 900;
+    margin-right: 16px;
+    font-size: 20px;
+    position: absolute;
+    left: 16px;
+    top: 18px;
+    vertical-align: middle;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  p {
+    color:$text-color;
+    margin-bottom: 0;
+  }
+}
+
+.note-wrapper {
+  position: relative;
+  top: 7px;
+  margin-bottom: 24px;
+  border: 3px solid #5551ff;
+  background: rgba(85, 81, 255, 0.4);
+
+  .note {
+    border: 3px solid #5551ff;
+    position: relative;
+    top: -10px;
+    right: 0;
+    left: 9px;
+    border-radius: 8px;
+    &:before {
+      content: '\f303';
+      color: #5551ff;
+    }
+  }
+}
+
+.tip-caution {
+  position: relative;
+  top: -10px;
+  right: 0;
+  left: 9px;
+  border-radius: 8px;
+}
+
+.tip-wrapper {
+  position: relative;
+  top: 7px;
+  margin-bottom: 24px;
+  border: 3px solid #2cc675;
+  background: #2cc6757a;
+
+  .tip {
+    @extend .tip-caution;
+  }
+}
+
+.caution-wrapper {
+  position: relative;
+  top: 7px;
+  margin-bottom: 24px;
+  border: 3px solid #ffc700;
+  background: rgba(255, 199, 0, 0.43);
+
+  .caution {
+    @extend .tip-caution;
+    border: 3px solid #ffc700;
+  }
+}
+
+.warning-wrapper {
+  border: 3px solid #ffa500;
+  background: rgba(255, 165, 0, 0.5);
+  .warning {
+    position: relative;
+    top: -10px;
+    right: 0;
+    left: 9px;
+    border-radius: 8px;
+    border: 3px solid #ffa500;
+  }
+}
+
+.danger-wrapper {
+  position: relative;
+  margin-bottom: 24px;
+  top: 7px;
+  border: 3px solid #ff0000;
+  background: rgba(255, 0, 0, 0.5);
+  .danger {
+    border: 3px solid #ff0000;
+    &:before {
+      content: '\f071';
+      color: #ff0000;
+    }
+  }
+}
+
+.before-start-wrapper {
+  border: 3px solid #000;
+  border-radius: 24px;
+  border-radius: 8px;
+}
