@@ -7,6 +7,13 @@
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
+$note:#5551ff !default;
+$caution: #ffc700 !default;
+$tip: #2cc675 !default;
+$important: #008000 !default;
+$danger: #ff0000 !default;
+$warning: #ffa500 !default;
+
 blockquote {
  cite {
    font-style:normal;
@@ -267,13 +274,19 @@ ins.adsbygoogle {
 .important,
 .danger,
 .notice,
-.warnig {
+.warning {
+  position:relative;
+  top: -10px;
+  right: 0;
+  left: 9px;
   display: block;
   margin: 0;
   padding: 20px 18px 20px 65px;
   line-height: 1.4em;
   color:$text-color;
   background:$background-color;
+  border:3px solid transparent;
+  border-radius:8px;
   &:before {
     font-family: Font Awesome\ 5 Free;
     font-weight: 900;
@@ -292,20 +305,19 @@ ins.adsbygoogle {
   }
 }
 
-.note-wrapper {
+@mixin admonitions ($color){
   position: relative;
   top: 7px;
   margin-bottom: 24px;
-  border: 3px solid #5551ff;
-  background: rgba(85, 81, 255, 0.4);
+  border:3px solid $color;
+  border-radius:8px;
+}
 
+.note-wrapper {
+  @include admonitions(#5551ff);
+  background: rgba(85, 81, 255, 0.4);
   .note {
-    border: 3px solid #5551ff;
-    position: relative;
-    top: -10px;
-    right: 0;
-    left: 9px;
-    border-radius: 8px;
+    border-color:#5551ff;
     &:before {
       content: '\f303';
       color: #5551ff;
@@ -313,69 +325,91 @@ ins.adsbygoogle {
   }
 }
 
-.tip-caution {
-  position: relative;
-  top: -10px;
-  right: 0;
-  left: 9px;
-  border-radius: 8px;
-}
-
 .tip-wrapper {
-  position: relative;
-  top: 7px;
-  margin-bottom: 24px;
-  border: 3px solid #2cc675;
-  background: #2cc6757a;
-
+  @include admonitions(#2cc675);
+  background:rgba(44, 198, 117, 0.48);
   .tip {
-    @extend .tip-caution;
+    border-color:#2cc675;
+    &:before {
+      content:'\f0d0';
+      color:#2cc675;
+    }
   }
 }
 
 .caution-wrapper {
-  position: relative;
-  top: 7px;
-  margin-bottom: 24px;
-  border: 3px solid #ffc700;
+  @include admonitions(#ffc700);
   background: rgba(255, 199, 0, 0.43);
-
   .caution {
-    @extend .tip-caution;
-    border: 3px solid #ffc700;
+    border-color:#ffc700;
+    &:before {
+      content:'\f071';
+      color:#ffc700;
+    }
   }
 }
 
 .warning-wrapper {
-  border: 3px solid #ffa500;
+  @include admonitions(#ffa500);
   background: rgba(255, 165, 0, 0.5);
   .warning {
-    position: relative;
-    top: -10px;
-    right: 0;
-    left: 9px;
-    border-radius: 8px;
-    border: 3px solid #ffa500;
+    border-color:#ffa500;
+    &:before {
+      content:'\f071';
+      color:#ffa500;
+    }
   }
 }
 
 .danger-wrapper {
-  position: relative;
-  margin-bottom: 24px;
-  top: 7px;
-  border: 3px solid #ff0000;
+  @include admonitions(#ff0000);
   background: rgba(255, 0, 0, 0.5);
   .danger {
-    border: 3px solid #ff0000;
+    border-color:#ff0000;
     &:before {
       content: '\f071';
       color: #ff0000;
     }
   }
 }
+.notice-wrapper {
+  @include admonitions(#4ebee4);
+  background:rgba(78, 190, 228, 0.67);
+  .notice {
+    margin:0 !important;
+    font-size: inherit !important;
+    border-color:#4ebee4;
+    &:before {
+      content:'\f05a';
+      color:#4ebee4;
+    }
+  }
+}
+.important-wrapper {
+  @include admonitions(#008000);
+  background:rgba(0, 128, 0, 0.52);
+  .important {
+    border-color:#008000;
+    &:before {
+      content:'\f06a';
+      color:#008000;
+    }
+  }
+}
 
-.before-start-wrapper {
-  border: 3px solid #000;
-  border-radius: 24px;
-  border-radius: 8px;
+.banner-wrapper {
+  padding:0.75rem 1rem;
+  color:#2b6cb0;
+  background-color:#ebf8ff;
+  border-top:1px solid #4299e1;
+  border-bottom:1px solid #4299e1;
+  p {
+    margin-bottom:0;
+    &.bold {
+      font-weight:700;
+    }
+    &.sm {
+      font-size:0.875rem;
+    }
+  }
 }
