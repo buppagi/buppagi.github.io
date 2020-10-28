@@ -314,85 +314,87 @@ ins.adsbygoogle {
 }
 
 .note-wrapper {
-  @include admonitions(#5551ff);
+  @include admonitions($note);
   background: rgba(85, 81, 255, 0.4);
   .note {
-    border-color:#5551ff;
+    border-color: $note;
     &:before {
       content: '\f303';
-      color: #5551ff;
+      color: $note;
     }
   }
 }
 
 .tip-wrapper {
-  @include admonitions(#2cc675);
-  background:rgba(44, 198, 117, 0.48);
+  @include admonitions($tip);
+  background: rgba(44, 198, 117, 0.48);
   .tip {
-    border-color:#2cc675;
+    border-color: $tip;
     &:before {
-      content:'\f0d0';
-      color:#2cc675;
+      content: '\f0d0';
+      color: $tip;
     }
   }
 }
 
 .caution-wrapper {
-  @include admonitions(#ffc700);
+  @include admonitions($caution);
   background: rgba(255, 199, 0, 0.43);
   .caution {
-    border-color:#ffc700;
+    border-color: $caution;
     &:before {
-      content:'\f071';
-      color:#ffc700;
+      content: '\f071';
+      color: $caution;
     }
   }
 }
 
 .warning-wrapper {
-  @include admonitions(#ffa500);
+  @include admonitions($warning);
   background: rgba(255, 165, 0, 0.5);
   .warning {
-    border-color:#ffa500;
+    border-color: $warning;
     &:before {
-      content:'\f071';
-      color:#ffa500;
+      content: '\f071';
+      color: $warning;
     }
   }
 }
 
 .danger-wrapper {
-  @include admonitions(#ff0000);
-  background: rgba(255, 0, 0, 0.5);
+  @include admonitions($danger);
+  background: rgba(255, 0, 0, 0.5);\
   .danger {
-    border-color:#ff0000;
+    border-color: $danger;
     &:before {
       content: '\f071';
-      color: #ff0000;
+      color: $danger;
     }
   }
 }
+
 .notice-wrapper {
-  @include admonitions(#4ebee4);
-  background:rgba(78, 190, 228, 0.67);
+  @include admonitions($notice);
+  background: rgba(78, 190, 228, 0.67);
   .notice {
-    margin:0 !important;
+    margin: 0 !important;
     font-size: inherit !important;
-    border-color:#4ebee4;
+    border-color: $notice;
     &:before {
-      content:'\f05a';
-      color:#4ebee4;
+      content: '\f05a';
+      color: $notice;
     }
   }
 }
+
 .important-wrapper {
-  @include admonitions(#008000);
-  background:rgba(0, 128, 0, 0.52);
+  @include admonitions($important);
+  background: rgba(0, 128, 0, 0.52);
   .important {
-    border-color:#008000;
+    border-color: $important;
     &:before {
-      content:'\f06a';
-      color:#008000;
+      content: '\f06a';
+      color: $important;
     }
   }
 }
